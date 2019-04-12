@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Flake it till you make it
-subtitle: Excerpt from Soulshaping by Jeff Brown
+title: My First Post
 ---
 
-I feel about importance of having own development blog.
+Recently, I really feel the importance of having my own development blog.
 So I decide to make this blog.
-Let's post hard !!
+
+Please, do it hard ㅠㅠ
