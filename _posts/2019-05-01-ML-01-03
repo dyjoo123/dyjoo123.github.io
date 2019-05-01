@@ -1,0 +1,24 @@
+---
+layout: post
+title: ML-01-03
+tags: [Machine Learning] [Machine Learning and Deep Learing BASIC by prof. kim in HKUST]
+---
+
+From now on, we are going to make some code that come out our theory to our workplace(laptop).
+
+First of all, we need to install Python program named anaconda and TensoeFlow.
+There are many ways to install these programs so if you want to install these, plaese google it.
+
+After some tasks, we can get into anaconda prompt.
+I'm going to use jupyter notebook which makes we can jot down our Pythin code just like as C or Java.
+
+If you have done these several tasks, then you're ready to study TensorFlow.
+
+(And before getting start, I notice that I refernce prof. Kim's lecture.)
+
+First, we are going to print "Hello, World!" that we love.
+
+Before write down codes, we have to import tensorflow just like that.
+```python
+import tensorflow as tf
+```
