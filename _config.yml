@@ -2,9 +2,9 @@
 # Site Configuration
 # =================================================================================
 
-title               :   blank                           # The site title (if blank, full name will be used instead)
-full_name           :   Your Full Name                  # The full site name (if blank, title will be used instead)
-email               :   'your@gmail.com'                # Your email address
+title               :   Immersive Insights              # The site title (if blank, full name will be used instead)
+full_name           :   Dongyun Joo                     # The full site name (if blank, title will be used instead)
+email               :   'dyjoo123@korea.ac.kr'          # Your email address
 lang                :   en                              # Site language (en for English)
 encoding            :   utf-8                           # Site encoding (utf-8 for Unicode)
 icon                :   '/assets/favicon/favicon.ico'   # Site favicon
