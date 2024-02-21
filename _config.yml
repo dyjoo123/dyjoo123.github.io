@@ -10,13 +10,13 @@ encoding            :   utf-8                           # Site encoding (utf-8 f
 icon                :   '/assets/favicon/favicon.ico'   # Site favicon
 logo                :   '/assets/logo/logo.jpg'         # Site logo, also used in jekyll-seo-tag
 home-bg             :   '/assets/images/home-bg.jpg'    # Home background image
-url                 :   'https://inkstream.netlify.app' # Site URL (if using a custom domain)
+url                 :   'https://dyjoo123.github.io' # Site URL (if using a custom domain)
 baseurl             :   ''                              # Site base URL (add if site is not at root)
-repo                :   'https://github.com/dev-mdirfan/inkstream' # Site repository, also used in jekyll-seo-tag
+repo                :   'https://github.com/dyjoo123/dyjoo123.github.io' # Site repository, also used in jekyll-seo-tag
 description         :   > # Site description and default description, also used in jekyll-seo-tag
-    A minimal, responsive, and fast Jekyll theme for personal blogs and portfolios.
+    Joo's portfolios and blogs.
 keywords            :   > # For SEO
-    jekyll, theme, minimal, responsive, blog, portfolio, fast, seo, social, web, development
+    jekyll, theme, minimal, responsive, blog, portfolio, fast, seo, social, web, development, joo, vr, ar, affective computing, resume
 footer_text         :   '© 2021 Inkstream'  # Footer text
 
 
