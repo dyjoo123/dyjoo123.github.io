@@ -46,7 +46,7 @@ user:
     bio         :   'XR Researcher'    # Short bio, You can also provide a links.
     profession  :   'student researcher in Korea University'             # Your profession (optional)
     location    :   'Seoul'                     # Your location (optional)
-    email       :   dyjoo123@korea.ac.kr              # Your email address (optional)
+    email       :   'dyjoo123@korea.ac.kr'              # Your email address (optional)
 
 download_resume: '/assets/resume/resume.pdf'    # Add the path to your resume
 
