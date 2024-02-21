@@ -44,7 +44,7 @@ social_links: # Leave blank according to your need
 user:
     name        :   Dongyun Joo                # Your name (required)
     bio         :   'XR Researcher'    # Short bio, You can also provide a links.
-    profession  :   'Student Researcher'             # Your profession (optional)
+    profession  :   'student researcher in Korea University'             # Your profession (optional)
     location    :   'Seoul'                     # Your location (optional)
     email       :   dyjoo123@korea.ac.kr              # Your email address (optional)
 
