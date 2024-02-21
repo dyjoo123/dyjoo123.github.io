@@ -72,7 +72,6 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "blog", "_posts"]
 exclude:
-    - _pages/about.md
     - README.md
     - LICENSE
     - CODE_OF_CONDUCT.md
@@ -131,10 +130,6 @@ navigation_header:
         title: Blog
         url: /blog/
         icon: blog
-    -
-        title: About Me
-        url: /about/
-        icon: user
 
 navigation_footer:
     -
