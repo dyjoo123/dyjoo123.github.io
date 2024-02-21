@@ -130,6 +130,10 @@ navigation_header:
         title: Blog
         url: /blog/
         icon: blog
+    -
+        title: About Me
+        url: /about/
+        icon: user
 
 navigation_footer:
     -
