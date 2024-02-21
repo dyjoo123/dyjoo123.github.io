@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+{% include site-header.html %}
+
+<div class="main-wrapper">
+
+    <article class="blog-post px-3 py-5 p-md-5">
+        <div class="container">
+            <header class="blog-post-header">
+                <h2 class="title mb-2">{{ page.title }}</h2>
+                <div class="meta mb-3">
+                    <span class="date">
+                        {% assign current_date = site.time | date: "%s" %}
+                        {% assign post_date = page.date | date: "%s" %}
+
+                        {% assign time_difference = current_date | minus: post_date %}
+                        {% assign seconds_in_a_day = 86400 %}
+                        {% assign seconds_in_a_month = 2628000 %}
+                        {% assign seconds_in_a_year = 31536000 %}
+
+                        {% if time_difference < seconds_in_a_day %} Posted {{ time_difference | divided_by: 60 | round
+                            }} minutes ago {% elsif time_difference < seconds_in_a_month %} Posted {{ time_difference |
+                            divided_by: seconds_in_a_day | round }} days ago {% elsif time_difference <
+                            seconds_in_a_year %} Posted {{ time_difference | divided_by: seconds_in_a_month | round }}
+                            months ago {% else %} Posted {{ time_difference | divided_by: seconds_in_a_year | round }}
+                            years ago {% endif %} </span>
+                            {% capture words %}
+                            {{ page.content | number_of_words }}
+                            {% endcapture %}
+                            <span class="time">{{ words | divided_by: 180 }} min read</span>
+                            <span class="time">{{ words }} words</span>
+                            <span class="comment">
+                                <a href="#">4 comments</a>
+                            </span>
+                </div>
+            </header>
+
+            <div class="blog-post-body">
+                <figure class="blog-banner">
+                    <a href="{{ page.image | relative_url }}">
+                        <img class="img-fluid rounded-left rounded-right shadow-sm" src="{{ page.image | relative_url }}"
+                            alt="{{ page.title }}" style="max-height: 400px; width: 100%;">
+                    </a>
+                    <figcaption class="mt-2 text-center image-caption">Image: {{ page.title | capitalize }}
+                    </figcaption>
+                </figure>
+
+                {{ content | markdownify}}
+            </div>
+
+            {% include post-comments.html %}
+
+        </div><!--//container-->
+    </article>
+
+    <!-- {% include promo-section.html %} -->
+
+    {% include site-footer.html %}
+
+</div>
+<!-- Main Wrapper-->
+
+<!-- {% include post-pagination.html %} -->
+
+{% include site-footer.html %}

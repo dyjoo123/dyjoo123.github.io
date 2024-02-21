@@ -1,0 +1,48 @@
+<header class="header text-center">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navigation" class="collapse navbar-collapse flex-column">
+            <!-- Profile Section Start -->
+            <div class="profile-section pt-3 pt-lg-0">
+                <a href="{{ site.navigation_header[0].url }}">
+                    <img class="profile-image mb-3 rounded-circle mx-auto" src="{{ site.logo | relaive_url }}" alt="image">
+                </a>
+                <h3 class="blog-name pt-2 mb-3">
+                    <a href="{{ site.navigation_header[0].url }}">{{ site.user.name }}'s Blog</a>
+                </h3>
+
+                <!-- Bio Section Start-->
+                <div class="bio mb-3">
+                    Hi, my name is {{ site.user.name }}.
+                    <p>
+                        {{ site.user.bio }}
+                    </p>
+                    <p>I am a {{ site.user.profession }}.</p>
+                    <p>
+                        <strong>Email: &nbsp;</strong><a href="mailto:{{ site.email }}">
+                            {{ site.user.email }}
+                        </a>
+                    </p>
+                </div>
+                <ul class="social-list list-inline py-3 mx-auto">
+                    {% include social.html %}
+                </ul>
+                <hr style="background: white;">
+            </div>
+            <!-- Profile Section End-->
+
+
+            {% include nav-header.html %}
+
+            <div class="my-2 my-md-3">
+                <a class="btn btn-primary" href="{{ site.download_resume | relative_url}}" target="_blank"
+                    download="{{ site.title }}-resume">Download Resume</a>
+            </div>
+        </div>
+    </nav>
+</header>
